@@ -1,0 +1,10 @@
+stages:
+  - deploy2ftp
+deploy:
+    stage: deploy2ftp
+    script:
+      - ~/.local/bin/deploy2ftp Web qyyxpt
+    only:
+      - master
+    tags:
+      - 共享

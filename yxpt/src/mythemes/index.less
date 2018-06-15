@@ -1,0 +1,30 @@
+@import '~iview/src/styles/index.less';
+
+// Here are the variables to cover, such as:  组件默认的修改
+//@import 'commonMain.less';
+@primary-color: #4f91ff;  //默认蓝色
+@info-color:#eef5ff; // 默认的输入 框背景 浅色
+@success-color:#8ae40e;  //输入框正确的
+
+.ivu-table-wrapper{
+    border:none;
+}
+
+.ivu-table td,.ivu-table th{
+    border-bottom:0px;
+}
+.ivu-icon-close-circled{
+    color:red;
+}
+.ivu-modal-header-inner{
+    color:@primary-color
+}
+.vertical-center-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ivu-modal{
+        top: 0;
+    }
+}
